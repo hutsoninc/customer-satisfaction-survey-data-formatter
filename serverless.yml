@@ -1,0 +1,14 @@
+org: agordon
+app: customer-satisfaction-survey
+service: customer-satisfaction-survey
+frameworkVersion: '>=1.0.0 <2.0.0'
+provider:
+  name: aws
+  runtime: nodejs12.x
+functions:
+  format:
+    handler: index.format
+    events:
+      - http:
+          path: format
+          method: post

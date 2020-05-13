@@ -1,0 +1,12 @@
+{
+  "name": "customer-satisfaction-survey-data-formatter",
+  "version": "1.0.0",
+  "main": "index.js",
+  "description": "Serverless function used in Zapier webhook to format data from Customer Satisfaction Surveys.",
+  "author": {
+    "name": "Austin Gordon",
+    "email": "gordon.austin2@gmail.com",
+    "url": "https://github.com/AustinLeeGordon"
+  },
+  "license": "MIT"
+}
