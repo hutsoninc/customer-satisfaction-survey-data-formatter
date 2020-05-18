@@ -20,7 +20,7 @@ const isDefined = (val) => {
 };
 
 const formatStringResponse = (val) => {
-    if (!isDefined(formattedVal)) {
+    if (!isDefined(val)) {
         return '';
     }
 
@@ -33,7 +33,7 @@ const formatStringResponse = (val) => {
 };
 
 const getValueOrFallback = (val) => {
-    if (!isDefined(formattedVal)) {
+    if (!isDefined(val)) {
         return '';
     }
 
