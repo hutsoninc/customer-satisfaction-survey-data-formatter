@@ -67,7 +67,13 @@ module.exports.format = (event, context, callback) => {
             data.offeredPartsAlternatives
         );
 
+        const receivedQuote = formatStringResponse(data.receivedQuote);
+
         const accurateQuote = formatStringResponse(data.accurateQuote);
+
+        const contactedBeforeRepairs = formatStringResponse(
+            data.contactedBeforeRepairs
+        );
 
         const contactedAfterPurchase = formatStringResponse(
             data.contactedAfterPurchase
@@ -102,7 +108,9 @@ module.exports.format = (event, context, callback) => {
                 serviceRating,
                 salesRating,
                 offeredPartsAlternatives,
+                receivedQuote,
                 accurateQuote,
+                contactedBeforeRepairs,
                 contactedAfterPurchase,
                 onlineSuggestions,
                 comments,
